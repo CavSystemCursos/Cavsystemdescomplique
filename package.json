@@ -1,0 +1,14 @@
+{
+  "name": "cavsystem-monorepo",
+  "private": true,
+  "packageManager": "pnpm@9",
+  "workspaces": [
+    "artifacts/*",
+    "lib/*"
+  ],
+  "scripts": {
+    "build": "pnpm --filter @workspace/cav-system build",
+    "start": "pnpm --filter @workspace/cav-system start",
+    "dev": "pnpm --filter @workspace/cav-system dev"
+  }
+}
